@@ -1,0 +1,22 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/ruby:2.4.1-node
+     steps:
+       - checkout
+       - run: 
+          name: Bundle Install
+          command: bundle install 
+       - run: 
+          name: NPM Install
+          command: npm install 
+       - run:
+          name: Build Middleman
+          command: middleman build
+       - run:
+          name: Install OpenJRE
+          command: sudo apt-get install --assume-yes openjdk-7-jre
+       - run:
+          name: Push to S3 and Invalidate
+          command: s3_website push4.
