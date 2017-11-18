@@ -12,8 +12,8 @@ jobs:
 
        # Run the bundle install command
        - run: 
-         name: Bundle Install
-         command: bundle install --path vendor/bundle
+          name: Bundle Install
+          command: bundle install --path vendor/bundle
        
        # Store the bundle cache 
        - type: cache-save
