@@ -4,6 +4,7 @@
 s3_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
 s3_secret: <%= ENV['S3_SECRET_ACCESS_KEY'] %>
 s3_bucket: <%= ENV['S3_BUCKET'] %>
+cloudfront_distribution_id: <%= ENV['CF_ID'] %>
 
 # set session_token if using temporary credentials with a session token (eg: when assuming a role)
 # session_token: YOUR_AWS_S3_SESSION_TOKEN
@@ -47,7 +48,16 @@ error_document: error.html
 #     items:
 #       - your.website.com
 
-# cloudfront_invalidate_root: true
+
+cloudfront_distribution_config:
+  default_cache_behavior:
+    min_ttl: <%= 60 * 60 * 24 %>
+  aliases:
+    quantity: 1
+    items:
+      - badge.reviews
+
+cloudfront_invalidate_root: true
 
 # concurrency_level: 5
 
