@@ -19,4 +19,4 @@ jobs:
           command: sudo apt-get install --assume-yes openjdk-7-jre
        - run:
           name: Push to S3 and Invalidate
-          command: s3_website push4.
+          command: s3_website push
