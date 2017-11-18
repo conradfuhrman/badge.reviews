@@ -8,8 +8,8 @@ jobs:
        # Restore bundle cache
        - restore_cache:
             keys: 
-              - bundle-{{ checksum "Gemfile.lock" }}
-              - npm-cache-{{ checksum "package.json" }}
+              - bundle2-{{ checksum "Gemfile.lock" }}
+              - npm2-cache-{{ checksum "package-lock.json" }}
 
        # Run the bundle install command
        - run: 
@@ -18,7 +18,7 @@ jobs:
        
        # Store the bundle cache 
        - type: cache-save
-         key: bundle-{{ checksum "Gemfile.lock" }}
+         key: bundle2-{{ checksum "Gemfile.lock" }}
          paths:
            - vendor/bundle    
        
@@ -29,7 +29,7 @@ jobs:
 
        # Save an updated cache of NPM
        - type: cache-save
-         key: npm-cache-{{ checksum "package.json" }}
+         key: npm2-cache-{{ checksum "package-lock.json" }}
          paths:
            - node_modules
 
