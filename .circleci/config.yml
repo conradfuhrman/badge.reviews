@@ -33,9 +33,9 @@ jobs:
          paths:
            - node_modules
 
-       - run:
-          name: Build Middleman
-          command: middleman build
+      #  - run:
+      #     name: Build Middleman
+      #     command: middleman build
 
       #  - run:
       #     name: Install OpenJRE
