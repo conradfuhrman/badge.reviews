@@ -49,8 +49,6 @@ error_document: error.html
 
 # cloudfront_invalidate_root: true
 
-cloudfront_wildcard_invalidation: true
-
 # concurrency_level: 5
 
 # redirects:

@@ -5,9 +5,17 @@ jobs:
        - image: circleci/ruby:2.4.1-node
      steps:
        - checkout
+       # Restore bundle cache
+       - type: cache-restore
+          key: bundle-{{ checksum "Gemfile.lock" }}
        - run: 
           name: Bundle Install
-          command: bundle install 
+          command: bundle install --path vendor/bundle
+       # Store the bundle cache 
+       - type: cache-save
+          key: bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+           - vendor/bundle    
        - run: 
           name: NPM Install
           command: npm install 
