@@ -9,6 +9,7 @@ jobs:
        - type: cache-restore
          key: bundle-{{ checksum "Gemfile.lock" }}
 
+       # Run the bundle install command
        - run: 
           name: Bundle Install
           command: bundle install --path vendor/bundle
@@ -19,9 +20,18 @@ jobs:
          paths:
            - vendor/bundle    
 
+       # NPM cache restore if exists
+       - type: cache-restore
+         key: dependency-cache-{{ checksum "package.json" }}
+       
+       # Install NPM
        - run: 
           name: NPM Install
           command: npm install 
+
+       # Save an updated cache of NPM
+       - type: cache-save
+         key: dependency-cache-{{ checksum "package.json" }}
 
        - run:
           name: Build Middleman
