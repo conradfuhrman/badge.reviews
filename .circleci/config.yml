@@ -32,6 +32,8 @@ jobs:
        # Save an updated cache of NPM
        - type: cache-save
          key: dependency-cache-{{ checksum "package.json" }}
+         paths:
+           - node_modules
 
        - run:
           name: Build Middleman
