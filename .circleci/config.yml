@@ -38,14 +38,17 @@ jobs:
          paths:
            - node_modules
 
+      # Build middleman
        - run:
           name: Build Middleman
           command: middleman build
 
+      # Install OpenJRE for S3 Website. This will move to a custom Docker container in a future release
        - run:
           name: Install OpenJRE
           command: sudo apt-get install --assume-yes openjdk-7-jre
 
+      # Push to S3 and CloudFront if configured
        - run:
           name: Push to S3 and Invalidate
           command: s3_website push
