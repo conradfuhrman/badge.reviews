@@ -6,16 +6,13 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
-
-
-    
+    <title>Badge Reviews</title>
+    <link href="/stylesheets/site.css" rel="stylesheet">
+    <script defer src="javascripts/fontawesome-all.js"></script>
   </head>
-  <body>
+  <body class="">
     <%= yield %>
 
-    <%= javascript_include_tag "vendor" %>
-    <%= javascript_include_tag "site" %>
+    <script src="/javascripts/site.js"></script>
   </body>
 </html>

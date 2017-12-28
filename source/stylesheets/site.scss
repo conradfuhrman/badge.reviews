@@ -1,4 +1,40 @@
-@import "~bootstrap/scss/bootstrap";
-@import "~sass-mediaqueries/media-queries";
+@tailwind preflight;
 
 @import 'fonts';
+
+html, body {
+    @apply font-atc;
+}
+
+a {
+    color: #6490A6;
+    @apply .no-underline font-semibold;
+
+    &:hover {
+        color: #B3DDF2;
+        @apply underline;
+    }
+}
+
+p {
+    @apply font-thin leading-normal text-xl mb-3;
+}
+
+.large-box {
+    @apply rounded overflow-hidden bg-white mt-8;
+}
+
+.why {
+    @apply font-bold text-xl mb-0 mt-8;
+}
+
+.rule {
+    @apply font-black text-3xl mb-4 mt-16 w-4/5;
+
+    span {
+        @apply text-grey-darker text-2xl;
+    }
+}
+
+@tailwind utilities;
+

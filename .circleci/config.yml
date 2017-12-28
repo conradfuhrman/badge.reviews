@@ -43,6 +43,9 @@ jobs:
           name: Build Middleman
           command: middleman build
 
+      - run: 
+          command: sudo apt-get update
+
       # Install OpenJRE for S3 Website. This will move to a custom Docker container in a future release
        - run:
           name: Install OpenJRE

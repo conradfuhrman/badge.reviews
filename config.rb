@@ -21,10 +21,10 @@ page '/*.txt', layout: false
 
 activate :external_pipeline,
 name: :webpack,
-command: build? ?
-"./node_modules/webpack/bin/webpack.js --bail" : 
-"./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
-source: ".tmp/dist",
+  command: build? ?
+  "./node_modules/webpack/bin/webpack.js --bail --env.production" : 
+  "./node_modules/webpack/bin/webpack.js --watch -d --progress --color --env.local",
+  source: ".tmp/dist",
 latency: 1
 
 # Proxy pages
