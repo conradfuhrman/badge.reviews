@@ -1,5 +1,7 @@
+version: 2.0
+
 jobs:
-   build:
+   "master":
      docker:
        - image: circleci/ruby:2.4.1-node
      steps:
@@ -55,3 +57,17 @@ jobs:
        - run:
           name: Push to S3 and Invalidate
           command: s3_website push
+
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - "development":
+          filters:
+            branches:
+              only: dev
+      - "master":
+          filters:
+            branches: 
+              only: master
