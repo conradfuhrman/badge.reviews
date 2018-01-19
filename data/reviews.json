@@ -1,0 +1,43 @@
+{
+    "reviews": [{
+        "rating": "1",
+        "source": "https://twitter.com/therealfitz/status/932031118546784257",
+        "photo": "DO86qwZXcAAXg6g.jpg",
+        "date" : "18 Nov 2017",
+        "from" : "rayshaunagray",
+        "description": ""
+        },
+        {
+        "rating": "3",
+        "source": "https://twitter.com/therealfitz/status/920150238903586817",
+        "photo": "DMTdieqUIAAUYVY.jpg",
+        "date" : "16 Oct 2017",
+        "from" : "chicagobob, esinclai",
+        "description": "Not bad, but spinny lanyard and ALL CAPS first name."
+        },
+        {
+        "rating": "2.5",
+        "source": "https://twitter.com/therealfitz/status/928509983314137088",
+        "photo": "DOGX10aWkAAGf95.jpg",
+        "date" : "8 Nov 2017",
+        "from" : "jovzoran",
+        "description": "Non-adjustable and so much wasted space, but a decent sized name."
+        },
+        {
+        "rating": "3",
+        "source": "https://twitter.com/therealfitz/status/940243298928783362",
+        "photo": "DQxif1AVQAE0pKu.jpg",
+        "date" : "11 Dec 2017",
+        "from" : "AndreaWiggins",
+        "description": "Non-adjustable but non-spinny lanyard. Big, prominent name, but awful ugly QR code and other visual noise. A good effort!"
+        },
+        {
+        "rating": "3",
+        "source": "https://twitter.com/therealfitz/status/895806438500474881",
+        "photo": "DG6JWPDUMAAu6sS.jpg",
+        "date" : "10 Aug 2017",
+        "from" : "jeremyzimmer",
+        "description": "Not bad--good sized name, adjustable lanyard."
+        }             
+    ]
+}

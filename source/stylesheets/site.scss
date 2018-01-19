@@ -4,6 +4,9 @@
 
 html, body {
     @apply font-atc;
+    background-image: url('/images/badge-bkg.png');
+    background-attachment: fixed;
+    background-size: 200px 200px;
 }
 
 a {
@@ -21,7 +24,7 @@ p {
 }
 
 .large-box {
-    @apply rounded overflow-hidden bg-white mt-8;
+    @apply rounded overflow-hidden;
 }
 
 .why {
@@ -35,6 +38,37 @@ p {
         @apply text-grey-darker text-2xl;
     }
 }
+
+nav {
+    a {
+        color: white;
+    }
+
+    &.top-nav {
+        @apply flex justify-between justify-end bg-grey-light p-1 flex-wrap items-center;
+    
+        a {
+            @apply text-grey-darker;
+        }
+    }
+}
+
+.rules-item {
+    @apply inline-flex items-start w-full px-4 py-2;
+
+    @screen sm {
+        @apply w-1/2;
+    }
+
+    .icon {
+        width: 120px;
+        flex: 0 0 120px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
 
 @tailwind utilities;
 

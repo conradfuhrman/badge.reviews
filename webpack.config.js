@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = {
     entry: {
         site: "./source/javascripts/site.js",
+        reviews: "./source/javascripts/reviews.js",
         fa: "./source/javascripts/fontawesome-all.js",
     },
     output: {

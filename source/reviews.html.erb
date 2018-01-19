@@ -1,0 +1,51 @@
+
+<section class="pt-8">
+
+
+
+<div class="my-shuffle-container mx-auto bg-transparent w-4/5">
+
+    <% data.reviews['reviews'].each do |review| %>
+    <div 
+    class="picture-item w-full sm:w-1/4 p-3 bg-transparent"
+    data-groups='["animal"]'
+    >
+        <div class="rounded overflow-hidden bg-white shadow-md">
+        <img class="w-full" src="/images/badges/<%= review.photo %>" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+                Score: <%= review.rating %> 
+                <img src="/images/ratings/<%= review.rating %>.svg" width="75">
+            </div>
+            <% if (review.description) %>
+            <p class="text-grey-darker text-base">
+                <%= review.description %>
+            </p>
+            <% end %>
+            
+        </div>
+        <div class="px-6 py-4">
+            <a href="<%= review.source %>" target="_blank">
+            <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
+            <i class="fab fa-twitter"></i>
+            view the tweet
+            </span>
+            </a>
+        </div>
+        <div class="px-6 py-4">
+            <span class="inline-block py-1 text-sm font-semibold text-grey-darker mr-2"><%= review.date %></span>
+        </div>
+        </div>
+    </div>
+    <% end %>
+
+    <div class="my-sizer-element w-1/4 ml-0"></div>
+</div>
+
+</section>
+
+
+<% content_for :script do %>
+<script src="/javascripts/reviews.js"></script>
+
+<% end %>

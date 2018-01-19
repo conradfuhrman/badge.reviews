@@ -10,9 +10,60 @@
     <link href="/stylesheets/site.css" rel="stylesheet">
     <script defer src="javascripts/fontawesome-all.js"></script>
   </head>
-  <body class="">
+  <body class="mt-16">
+
+    <div class="fixed w-full pin-t z-50">
+      <nav class="top-nav">
+        <div class="flex items-center flex-no-shrink mr-6">
+          <div>
+              <a href="https://github.com/BadgeReviews/badges" target="_blank" class="no-underline inline-block text-smtracking-tight leading-none">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+        </div>
+      </nav>
+
+      
+      <nav class="flex p-3 border-b justify-between flex-wrap bg-black items-center">
+        <div class="flex items-center flex-no-shrink mr-6">
+          <a href="/">
+
+            <img class="absolute -mt-8" width="55" src="images/logo.png">
+
+            <span class="text-xl pl-16 font-bold tracking-tight">Badge  <span class="font-light">Reviews</span></span> 
+          </a>
+        </div>
+        
+        
+        <div class="w-full block flex-grow lg:flex lg:w-auto lg:items-center">
+            <div class="flex-grow lg:w-auto"></div>
+            <div style="text-align: right;">
+                <a href="/10-rules-for-a-better-conference-name-badge" class="px-4 text-sm">The Article</a>
+                <a href="/about" class="no-underline inline-block text-sm px-4 py-2 tracking-tight leading-none">
+                    About
+                </a>                
+                <a href="/reviews" class="no-underline inline-block text-sm px-4 py-2 tracking-tight leading-none">
+                    Reviews
+                </a>
+            </div>
+        </div>    
+      </nav>
+    </div>
+
+
     <%= yield %>
 
+
+    <footer class="w-full bg-white border-t-4 border-chicago-blue p-2 mx-auto text-center">
+      <p class="text-xs">Proudly Built in Chicago</p>
+      <img src="images/chicago-stars.svg" width="75">
+    </footer>
+
     <script src="/javascripts/site.js"></script>
+
+    <%= yield_content :script %>
+
+
+
   </body>
 </html>
