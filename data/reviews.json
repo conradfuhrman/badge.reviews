@@ -38,6 +38,54 @@
         "date" : "10 Aug 2017",
         "from" : "jeremyzimmer",
         "description": "Not bad--good sized name, adjustable lanyard."
-        }             
+        }, 
+        {
+            "rating": "1",
+            "source": "https://twitter.com/therealfitz/status/955328066032754690",
+            "photo": "DUH0vh0UQAAvz0f.jpg",
+            "date" : "22 Jan 2018",
+            "from" : "llanga",
+            "description": "Fancy idea but the name is almost illegible, the conf logo is huge, and it's a spinny non-adjustable lanyard."
+        }, 
+        {
+            "rating": "1.5",
+            "source": "https://twitter.com/therealfitz/status/938474809402503168",
+            "photo": "DQWrhM0X4AAth7Q.jpg",
+            "date" : "6 Dec 2017",
+            "from" : "chrismillikin",
+            "description": "Non-spinny but non-adjustable lanyard. Small name, prominent logo, ugly bar code."
+        }, 
+        {
+            "rating": "3",
+            "source": "https://twitter.com/therealfitz/status/928498263560507393",
+            "photo": "DNpGvVhUEAAw4JG.jpg",
+            "date" : "8 Nov 2017",
+            "from" : "joshsimmons",
+            "description": "Not bad at all! Good-sized name, non-spinny lanyard, other reasons to look at the badge too. Gonna ding you for non-adjustable and tiny last name."
+        }, 
+        {
+            "rating": "1.5",
+            "source": "https://twitter.com/therealfitz/status/923586180528201728",
+            "photo": "DNDOk0YX4AACKeA.jpg",
+            "date" : "26 Oct 2017",
+            "from" : "jovzoran",
+            "description": "Spinny non-adjustable lanyard, tag filled with crap about the con, ugly UGLY QR code, medium-sized name at bottom."
+        }, 
+        {
+            "rating": "1.5",
+            "source": "https://twitter.com/therealfitz/status/912143403802034176",
+            "photo": "DKiTTywXUAENRmc.jpg",
+            "date" : "24 Sep 2017",
+            "from" : "esinclai",
+            "description": "Non-spinny lanyard, good info on back, but looks like your name is \"Microsoft Ignite\", tiny name + ugly QR code."
+        }, 
+        {
+            "rating": "2",
+            "source": "https://twitter.com/therealfitz/status/923586180528201728",
+            "photo": "DKLNvh0VoAAOCgM.jpg",
+            "date" : "20 Sep 2017",
+            "from" : "shobe",
+            "description": "Spinny lanyard, ugly QR code, medium sized name."
+        }                
     ]
 }
